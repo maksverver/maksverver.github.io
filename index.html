@@ -5,31 +5,113 @@
   <meta name="author" content="Maks Verver">
   <title>Maks Verver's GitHub homepage</title>
   <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="favicon.png">
 </head>
 
 <body>
-<h1>Live demos</h1>
+<div class="page">
+<img src="favicon.png" style="float:right" alt="MV">
+
+<h1>Maks Verver’s GitHub homepage</h1>
+
+<p>I have over a hundred repositories on <a href="https://github.com/maksverver">my GitHub account</a>, many small one-off projects, but some more substantial and/or more generally useful.</p>
+
+<p>Below is a selection of projects that I find useful or interesting, listed in no particular order. Many of these are pretty old. Some are web applications, some of which are implemented in JavaScript and HTML only. Standalone applications are usually designed to compile and run on Linux, but some also work on FreeBSD or Windows.</p>
+
+<h2 id="live-demos">Live demos</h2>
 <p>
 The following projects have live demos hosted on GitHub:
 
 <ul>
-<li><a href="https://maksverver.github.io/mazedoku/">Mazedoku</a>: a generator for a Sudoku variant.</li>
-<li><a href="https://maksverver.github.io/duokoban-static/#game=KKEAASSAJJJIpYSIBSIBSIZoSQSSCINdD">Duokoban</a>: a Sokoban variant that is played by two players on a single keyboard! (This is a static archive of the version that was originally hosted on Heroku, which supported rating levels and submitting new ones.)</li>
-<li><a href="https://maksverver.github.io/mazes/">Maze generator</a>: generates truly uniform mazes using Wilson's algorithm, on a rectangular or hexagonal grid.</li>
 <li><a href="https://maksverver.github.io/setko-puzzler-67/">Setko Puzzler 67</a>: a peg-jumping puzzle, including a solver that can reveal optimal moves.</li>
-<li><a href="https://maksverver.github.io/hexagon-puzzle/">Hexagon puzzle</a>: a score optimization puzzle on a hexagon. <a href="https://github.com/maksverver/hexagon-puzzle/">The source code repository</a> also contains a solver to find optimal solutions.</a></li>
+<li><a href="https://maksverver.github.io/duokoban-static/#game=KKEAASSAJJJIpYSIBSIBSIZoSQSSCINdD">Duokoban</a>: a Sokoban variant that is played by two players on a single keyboard! (This is a static archive of the version that was originally hosted on Heroku, which supported rating and submitting new levels.)</li>
+<li><a href="https://maksverver.github.io/hexagon-puzzle/">Hexagon puzzle</a>: a simple optimization puzzle on a hexagon. (The <a href="https://github.com/maksverver/hexagon-puzzle/">git repo</a> also contains a solver to find optimal solutions.)</li>
+<li><a href="https://maksverver.github.io/mazedoku/">Mazedoku</a>: generates puzzles for a Sudoku variant, and supports playing them, too.</li>
+<li><a href="https://maksverver.github.io/mazes/">Maze generator</a>: generates truly uniformly-random mazes on a rectangular or hexagonal grid using Wilson's algorithm.</li>
+
 <!--
 <li><a href="https://maksverver.github.io/sokoban-www/">Sokoban visualizer</a>: interactive Sokoban implementation, which I use to visualize solutions from my Sokoban solver (not yet published)</li>
 -->
 </ul>
-</p>
 
-<h1>Other projects</h1>
 <p>
-I have over a hundred more projects on my GitHub account, some more substantial/interesting than others:
-<a href="https://github.com/maksverver">https://github.com/maksverver</a>
+The following are self-hosted and may be temporarily or permanently unavailable:
 </p>
 
+<ul>
+<li><a href="https://styx.verver.ch/wikipath/">Wikipedia Shortest Path Search</a>: finds the quickest way to go from one Wikipedia article to another by clicking wikilinks. Like <a href="https://www.sixdegreesofwikipedia.com/">Six Degrees of Wikipedia</a>, but my implementation is much faster! Implemented in C++, using <a href="https://www.webtoolkit.eu/wt">Wt</a> for the web frontend.</li>
 
+<li id="push-fight"><a href="https://styx.verver.ch/pushfight/">Push Fight</a>: (<a href="https://pushfight.verver.ch/">alternative hosted on GCE</a>) web UI to play the board game <a href="https://pushfightgame.com/">Push Fight</a> against an optimal AI. I was the first person to completely solve the game, with the help from volunteers who donated CPU time. The <a href="https://github.com/maksverver/pushfight">git repo</a> also contains tools to manipulate various intermediate file formats, distributed computing tools, and a standalone implementation of the web app that can run off of a USB stick!</li>
+</ul>
+
+<h2>Other projects</h2>
+
+<p>The following is a selection of Github repositories that I find memorable.
+
+<h3>Linux/FreeBSD tools</h3>
+
+<ul>
+<li><a href="https://github.com/maksverver/tardiff">tardiff</a>: generates small binary diffs between block-oriented files, like .tar files. I used this to create incremental backups.</li>
+<li><a href="https://github.com/maksverver/sqlfuse">sqlfuse</a>: an encrypted filesystem stored in a <a href="https://sqlite.org/index.html">SQLite</a> database. Uses <a href="https://www.zetetic.net/sqlcipher/">SQLCipher</a> for encryption.</li>
+<li><a href="https://github.com/maksverver/foxtrot">foxtrot</a>: mounts Windows shared folders (SMB/CIFS) on Linux via FUSE.</li>
+<li><a href="https://github.com/maksverver/loot">loot</a>: a small task bar widget to open/close resources (like network mounts etc.).</li>
+<li><a href="https://github.com/maksverver/cpu-throttle">cpu-throttle</a>: reduces CPU power while a command is running.</li>
+</ul>
+
+<h3>Programming contests</h3>
+
+<ul>
+<li><a href="https://github.com/maksverver/AdventOfCode">AdventOfCode</a>: my solutions for the annual <a href="https://adventofcode.com/">Advent of Code</a> programming puzzles.</li>
+<li><a href="https://github.com/maksverver/cses">cses</a>: solutions to the <a href="https://cses.fi/problemset/">CSES problem set</a> (unfinished).</li>
+<li><a href="https://github.com/maksverver/PrimaDvonna">PrimaDvonna</a>: an AI to play the board game <a href="https://boardgamegeek.com/boardgame/2346/dvonn">Dvonn</a> — winner of the 2011 <a href="https://www.codecup.nl/">CodeCup</a>!</li>
+<li><a href="https://github.com/maksverver/caissa-gui">caissa-gui</a>: a UI to play the board game Caïssa online, based on Java AWT — one of the first UI apps I ever wrote.</li>
+<li><a href="https://github.com/maksverver/caissa-mars/blob/master/mars.c">caissa-mars</a>: an AI to play the board game <a href="https://boardgamegeek.com/boardgame/254912/caissa">Caïssa</a> — achieved 3<sup>rd</sup> place in the 2003 <a href="https://www.codecup.nl">CodeCup</a>.</li>
+</ul>
+
+<h3>Puzzles</h3>
+
+<ul>
+<li><a href="https://github.com/maksverver/kakuro">kakuro</a>: an editor for <a href="https://en.wikipedia.org/wiki/Kakuro">Kakuro puzzles</a>, built using Qt 5 — supports manual editing, validity checking, automatic solving, printing, exporting as image, and exporting as text.</li>
+<li><a href="https://github.com/maksverver/cijferkubus">cijferkubus</a>: a solver and 3D viewer for a variant of the Rubik's cube, built with <a href="https://www.fltk.org/">FLTK</a> and OpenGL.</li>
+</ul>
+
+<p>More puzzles are linked under the <a href="#live-demos">live demos</a> section above.</p>
+
+<h3>Games</h3>
+
+<ul>
+<li><a href="https://github.com/maksverver/zatacka">zatacka</a>: a network-enabled implementation of the classic DOS game known as “Zatacka” or “Achtung, die Kurve!” — built using <a href="https://www.fltk.org/">FLTK</a> and OpenGL, with a standalone server implementation and pretty good AI players.</li>
+<li><a href="https://github.com/maksverver/Conhexion">Conhexion</a>: a tiling puzzle for Android, based on <a href="https://www.mindsports.nl/index.php/puzzles/tilings/china-labyrinth/">The China Labyrinth</a> — the only Android app I ever made.</li>
+<li>See also <a href="#push-fight">Push Fight</a> above.</li>
+</ul>
+
+<h3>Academia</h3>
+
+<ul>
+<li><a href="https://github.com/maksverver/MSc">MSc</a>: files related to my Master's thesis.</li>
+<li><a href="https://github.com/maksverver/BSc">BSc</a>: files related to my Bachelor's thesis.</li>
+</ul>
+
+<h3>Esoteric languages</h3>
+
+<ul>
+<li><a href="https://github.com/maksverver/BrainfuckVM">BrainfuckVM</a>: a highly efficient <a href="https://esolangs.org/wiki/Brainfuck">Brainfuck</a> VM with just-in-time compilation and many features useful for debugging and error detection.</li>
+<li><a href="https://github.com/maksverver/befunge">befunge</a>: an interpeter for the esoteric programming language <a href="https://esolangs.org/wiki/Befunge">Befunge</a>.</li>
+</ul>
+
+<h3>Miscellaneous</h3>
+
+<ul>
+<li><a href="https://github.com/maksverver/xz-random-access/blob/master/xzra.c">xz-random-access</a>: a proof of concept demonstrating how to read arbitrary byte ranges from a compressed file in .xz format (I used this in my <a href="#push-fight">Push Fight</a> standalone implementation).</li>
+<li><a href="https://github.com/maksverver/key-encoding">key-encoding</a>: a human-friendly base-32 encoding scheme for product codes.</li>
+</ul>
+
+<hr>
+
+<p>
+Last updated: 2023-05-02
+</p>
+
+</div>
 </body>
 </html>
