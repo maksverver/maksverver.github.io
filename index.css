@@ -1,5 +1,6 @@
 :root {
   font: 12pt sans-serif;
+  line-height: 1.1;
 }
 
 body {
@@ -14,7 +15,6 @@ body {
   max-width: 50em;
   margin: auto;
   padding: 5px 2em;
-  line-height: 140%;
 }
 
 a:link {
